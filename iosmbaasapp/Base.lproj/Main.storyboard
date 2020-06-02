@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yun-d9-IRY">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Basic MBaaS-->
+        <scene sceneID="kp0-eG-MSe">
+            <objects>
+                <navigationController title="Basic MBaaS" id="yun-d9-IRY" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="k6U-O9-GpT">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1152396128" green="0.20388826730000001" blue="0.34511446950000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bxy-x4-WvM" kind="relationship" relationship="rootViewController" id="VNH-pL-6VE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S0O-ZU-aPm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-449" y="-294"/>
+        </scene>
+        <!--Basic MBaaS Starter-->
+        <scene sceneID="LXQ-cG-DTb">
+            <objects>
+                <viewController id="bxy-x4-WvM" customClass="ViewController" customModule="basicmbaasios" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="haB-wI-nCm"/>
+                        <viewControllerLayoutGuide type="bottom" id="7ZM-da-93k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MO4-25-vQm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="4mo-Tm-Km8">
+                                <rect key="frame" x="70" y="160" width="235" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="g1T-Bt-Ggh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are ready to get started! " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dm2-VF-oLY">
+                                <rect key="frame" x="16" y="405" width="343" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dm2-VF-oLY" firstAttribute="leading" secondItem="MO4-25-vQm" secondAttribute="leadingMargin" id="5FX-Vw-Zg7"/>
+                            <constraint firstItem="dm2-VF-oLY" firstAttribute="trailing" secondItem="MO4-25-vQm" secondAttribute="trailingMargin" id="K1L-Fc-nkl"/>
+                            <constraint firstItem="4mo-Tm-Km8" firstAttribute="leading" secondItem="MO4-25-vQm" secondAttribute="leadingMargin" constant="54" id="KWO-fB-z9T"/>
+                            <constraint firstItem="4mo-Tm-Km8" firstAttribute="top" secondItem="haB-wI-nCm" secondAttribute="bottom" constant="72" id="Z7L-pz-WVN"/>
+                            <constraint firstItem="dm2-VF-oLY" firstAttribute="top" secondItem="4mo-Tm-Km8" secondAttribute="bottom" constant="20" id="ekz-G1-USK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4mo-Tm-Km8" secondAttribute="trailing" constant="54" id="fia-eA-MBf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Basic MBaaS Starter" id="7Jv-GC-w0C"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5tA-ox-uJg" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="437.60000000000002" y="-294.0886699507389"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloud" width="507" height="449"/>
+    </resources>
+</document>
