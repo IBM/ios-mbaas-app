@@ -4,9 +4,9 @@
 //
 
 import XCTest
-@testable import basicmbaasios
+@testable import iosmbaasapp
 
-class basicmbaasiosTests: XCTestCase {
+class iosmbaasappTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
