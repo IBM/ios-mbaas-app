@@ -19,8 +19,8 @@ The MBaaS Swift starter kit is an empty project preconfigured with support for [
 ### Requirements
 
 * iOS 12.0+
-* Xcode 10.0
-* Swift 4.2+
+* Xcode 10.0+
+* Swift 5.0+
 
 ### Configuration
 * [IBM Cloud Mobile services Dependency Management](#ibm-cloud-mobile-services-dependency-management)
