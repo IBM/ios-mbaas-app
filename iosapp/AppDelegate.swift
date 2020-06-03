@@ -24,18 +24,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         
 
-        if let contents = Bundle.main.path(forResource:"BMSCredentials", ofType: "plist"), let dictionary = NSDictionary(contentsOfFile: contents) {
+        if let contents = Bundle.main.path(forResource:"BMSCredentials", ofType: "plist"), let creds = NSDictionary(contentsOfFile: contents),
+            let pushConfig = creds["push"] as? NSDictionary {
         	let push = BMSPushClient.sharedInstance
-        	push.initializeWithAppGUID(appGUID: dictionary["pushAppGuid"] as! String, clientSecret: dictionary["pushClientSecret"] as! String)
+        	push.initializeWithAppGUID(appGUID: pushConfig["appGuid"] as! String, clientSecret: pushConfig["clientSecret"] as! String)
         }
 
         
         // App ID initialization
         // NOTE: Enable Keychain Sharing capability in Xcode
         if let contents = Bundle.main.path(forResource:"BMSCredentials", ofType: "plist"),
-           let dictionary = NSDictionary(contentsOfFile: contents),
-           let tenantID = dictionary["appidTenantId"] as? String,
-           let appidRegion = dictionary["appidAppidServiceEndpoint"] as? String {
+           let creds = NSDictionary(contentsOfFile: contents),
+           let appidConfig = creds["appid"] as? NSDictionary,
+           let tenantID = appidConfig["tenantId"] as? String,
+           let appidRegion = appidConfig["appidServiceEndpoint"] as? String {
 
                 let appid = AppID.sharedInstance
                 appid.initialize(tenantId: tenantID, region: appidRegion)

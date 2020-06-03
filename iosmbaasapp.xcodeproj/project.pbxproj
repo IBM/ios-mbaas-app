@@ -117,9 +117,9 @@
 		555C919F1D0F0731003E84E3 = {
 			isa = PBXGroup;
 			children = (
-				555C91AA1D0F0731003E84E3 /* iosmbaasapp */,
-				555C91BF1D0F0731003E84E3 /* iosmbaasappTests */,
-				555C91CA1D0F0731003E84E3 /* iosmbaasappUITests */,
+				555C91AA1D0F0731003E84E3 /* iosapp */,
+				555C91BF1D0F0731003E84E3 /* iosappTests */,
+				555C91CA1D0F0731003E84E3 /* iosappUITests */,
 				555C91A91D0F0731003E84E3 /* Products */,
 				A4160B77D037FA5B9F790955 /* Pods */,
 				545C9DD4D3D79A706E9BC9CE /* Frameworks */,
@@ -136,7 +136,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		555C91AA1D0F0731003E84E3 /* iosmbaasapp */ = {
+		555C91AA1D0F0731003E84E3 /* iosapp */ = {
 			isa = PBXGroup;
 			children = (
 				33BE5104B1E44FC1BE376B90 /* BMSCredentials.plist */,
@@ -147,26 +147,26 @@
 				555C91B41D0F0731003E84E3 /* LaunchScreen.storyboard */,
 				555C91B71D0F0731003E84E3 /* Info.plist */,
 			);
-			path = iosmbaasapp;
+			path = iosapp;
 			sourceTree = "<group>";
 		};
-		555C91BF1D0F0731003E84E3 /* iosmbaasappTests */ = {
+		555C91BF1D0F0731003E84E3 /* iosappTests */ = {
 			isa = PBXGroup;
 			children = (
 				AA337D7D220B84D300C93EFF /* iosmbaasappTests.swift */,
 				555C91C21D0F0731003E84E3 /* Info.plist */,
 			);
-			path = iosmbaasappTests;
+			path = iosappTests;
 			sourceTree = "<group>";
 		};
-		555C91CA1D0F0731003E84E3 /* iosmbaasappUITests */ = {
+		555C91CA1D0F0731003E84E3 /* iosappUITests */ = {
 			isa = PBXGroup;
 			children = (
 				AA337D7F220B855800C93EFF /* iosmbaasappUITests.swift */,
 				AA337D81220B857E00C93EFF /* iosmbaasappUITests.swift */,
 				555C91CD1D0F0731003E84E3 /* Info.plist */,
 			);
-			path = iosmbaasappUITests;
+			path = iosappUITests;
 			sourceTree = "<group>";
 		};
 		A4160B77D037FA5B9F790955 /* Pods */ = {
@@ -579,7 +579,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "$(SRCROOT)/iosmbaasapp/Info.plist";
+				INFOPLIST_FILE = iosapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -598,7 +598,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "$(SRCROOT)/iosmbaasapp/Info.plist";
+				INFOPLIST_FILE = iosapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -617,7 +617,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = iosmbaasappTests/Info.plist;
+				INFOPLIST_FILE = iosappTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -637,7 +637,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = iosmbaasappTests/Info.plist;
+				INFOPLIST_FILE = iosappTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -656,7 +656,7 @@
 			baseConfigurationReference = 2C0AFFFE78EDB4A48CA89608 /* Pods-iosmbaasappUITests.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = iosmbaasappUITests/Info.plist;
+				INFOPLIST_FILE = iosappUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -675,7 +675,7 @@
 			baseConfigurationReference = D0AC59FFFD5E4041A7F473ED /* Pods-iosmbaasappUITests.release.xcconfig */;
 			buildSettings = {
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = iosmbaasappUITests/Info.plist;
+				INFOPLIST_FILE = iosappUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
